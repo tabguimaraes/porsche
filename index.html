@@ -6,71 +6,82 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Porsche</title>
   </head>
-  <body class="box-border h-screen bg-[#E2E4E6] bg-[url('./assets/img/iris.svg')] bg-cover bg-no-repeat bg-center">
-    <header class="flex justify-between items-center border-b p-8">
-      <img src="./assets/img/hamburguer.svg" alt="" />
+  <body class="static box-border h-full bg-[#E2E4E6] bg-[url('./assets/img/iris.svg')] bg-cover bg-no-repeat bg-center">
+    <header class="flex h- justify-between items-center border-b p-8">
+      <!-- <img src="./assets/img/hamburguer.svg" alt="" /> -->
+      <button
+        data-collapse-toggle="navbar-hamburger"
+        type="button"
+        class="delay-100 duration-200 inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-hamburger"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
       <img class="w-[300px] h-[30px]" src="./assets/img/logo.svg" alt="" />
       <div class="flex gap-4 h-10">
-        <img class="bg-[#E7E8EA] p-3 rounded-full" src="./assets/img/user.svg" alt="" />
-        <button class="rounded-full flex items-center bg-black text-white p-3 gap-4">
+        <img class="hover:scale-125 delay-100 duration-200 bg-[#E7E8EA] p-3 rounded-full" src="./assets/img/user.svg" alt="" />
+        <button class="hover:scale-110 delay-100 duration-200 rounded-full flex items-center bg-black text-white p-3 gap-4">
           <span><img src="./assets/img/arrow.svg" alt="" /></span>Find Porsche Center
         </button>
       </div>
     </header>
     <section class="title flex justify-between pl-8 pr-8 pt-8">
-      <p class="flex items-center gap-4">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
         <span><img src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
       </p>
       <h1 class="text-6xl">911 Carrera S</h1>
-      <p class="flex items-center gap-4">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
         Save configuration<span><img class="h-[40px] w-[40px]" src="./assets/img/save.svg" alt="" /></span>
       </p>
     </section>
     <main class="flex justify-between items-center w-full min-h-[500px]">
-      <img class="rounded-r-full bg-white pl-8 pt-4 pb-4 pr-4" src="./assets/img/prev.svg" alt="" />
-      <!-- <img class="bg-cover -z-10" src="./assets/img/iris.svg" alt="" /> -->
-      <img class="rounded-l-full bg-white pr-8 pt-4 pb-4 pl-4" src="./assets/img/next.svg" alt="" />
+      <img class="hover:scale-150 delay-100 duration-200 rounded-r-full bg-white pl-8 pt-4 pb-4 pr-4" src="./assets/img/prev.svg" alt="" />
+      <img class="hover:scale-150 delay-100 duration-200 rounded-l-full bg-white pr-8 pt-4 pb-4 pl-4" src="./assets/img/next.svg" alt="" />
     </main>
-    <footer class="flex w-full justify-around items-start h-24" style="position: absolute; bottom: 0">
-      <p class="flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
+    <footer class="bottom-0 flex w-full justify-around items-start h-24 bg-[#e2e4e60f]">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
         Technical Data
         <span><img class="w-[35px]" src="./assets/img/car.svg" alt="" /></span>
       </p>
       <div class="footer-items flex justify-between items-center gap-9">
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/color.svg" alt="" />
           <p>Colors</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/wheels.svg" alt="" />
           <p>Wheels</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/materials.svg" alt="" />
           <p>Materials</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/seat.svg" alt="" />
           <p>Seats</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/options.svg" alt="" />
           <p>Options</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/technology.svg" alt="" />
           <p>Technology</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/packages.svg" alt="" />
           <p>Packages</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center">
+        <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/accessories.svg" alt="" />
           <p>Accessories</p>
         </div>
       </div>
-      <div class="price h-full bg-black pt-8 pl-12 pr-12 rounded-t-3xl">
+      <div class="footer-item hover:scale-110 delay-100 price h-full bg-black pt-8 pl-12 pr-12 rounded-t-3xl">
         <p class="text-[#898C9494] text-sm">Total Price</p>
         <p class="text-white">£125,356.00</p>
       </div>
