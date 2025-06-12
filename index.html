@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Porshe</title>
+    <title>Porsche</title>
   </head>
-  <body class="box-border w-[1440px] h-[982px] bg-[#f8f8f8]">
-    <header class="flex p-8 justify-between items-center border-b pb-16">
+  <body class="box-border bg-[#E2E4E6] bg-[url('./assets/img/iris.svg')]">
+    <header class="flex justify-between items-center border-b p-8">
       <img src="./assets/img/hamburguer.svg" alt="" />
       <img class="w-[300px] h-[30px]" src="./assets/img/logo.svg" alt="" />
       <div class="flex gap-4 h-10">
@@ -17,7 +17,7 @@
         </button>
       </div>
     </header>
-    <section class="title flex justify-between p-8 pt-10">
+    <section class="title flex justify-between pl-8 pr-8 pt-8">
       <p class="flex items-center gap-4">
         <span><img src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
       </p>
@@ -26,49 +26,53 @@
         Save configuration<span><img class="h-[40px] w-[40px]" src="./assets/img/save.svg" alt="" /></span>
       </p>
     </section>
-    <main class="flex justify-between items-center h-96">
+    <main class="flex justify-between items-center w-full min-h-[500px]">
       <img class="rounded-r-full bg-white pl-8 pt-4 pb-4 pr-4" src="./assets/img/prev.svg" alt="" />
-      <img class="bg-cover -z-10" src="./assets/img/iris.svg" alt="" />
+      <!-- <img class="bg-cover -z-10" src="./assets/img/iris.svg" alt="" /> -->
       <img class="rounded-l-full bg-white pr-8 pt-4 pb-4 pl-4" src="./assets/img/next.svg" alt="" />
     </main>
-    <footer class="pt-[250px] h-52 flex justify-around items-center bg-[#E2E4E600]">
+    <footer class="flex justify-around items-start h-24">
       <p class="flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
         Technical Data
         <span><img class="w-[35px]" src="./assets/img/car.svg" alt="" /></span>
       </p>
       <div class="footer-items flex justify-between items-center gap-9">
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/color.svg" alt="" />
           <p>Colors</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/wheels.svg" alt="" />
           <p>Wheels</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/materials.svg" alt="" />
           <p>Materials</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/seat.svg" alt="" />
           <p>Seats</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/options.svg" alt="" />
           <p>Options</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/technology.svg" alt="" />
           <p>Technology</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/packages.svg" alt="" />
           <p>Packages</p>
         </div>
-        <div class="flex flex-col footer-item place-items-center gap-4">
+        <div class="flex flex-col footer-item place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/accessories.svg" alt="" />
           <p>Accessories</p>
         </div>
+      </div>
+      <div class="price h-full bg-black pt-8 pl-12 pr-12 rounded-t-3xl">
+        <p class="text-[#898C9494] text-sm">Total Price</p>
+        <p class="text-white">£125,356.00</p>
       </div>
     </footer>
   </body>
