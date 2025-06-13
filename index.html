@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Porsche</title>
   </head>
-  <body class="box-border h-screen bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-cover bg-no-repeat">
+  <body class="flex flex-col min-h-screen box-border bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-contain bg-center bg-no-repeat">
     <header class="flex justify-between items-center border-b p-8">
       <!-- <img src="./assets/img/hamburguer.svg" alt="" /> -->
       <button
@@ -38,11 +38,11 @@
         Save configuration<span><img class="h-[40px] w-[40px]" src="./assets/img/save.svg" alt="" /></span>
       </p>
     </section>
-    <main class="flex justify-between items-center h-[500px] overflow-hidden">
+    <main class="flex justify-between items-center flex-grow overflow-hidden">
       <img class="hover:scale-150 delay-100 duration-200 rounded-r-full bg-white p-4" src="./assets/img/prev.svg" alt="Voltar" />
       <img class="hover:scale-150 delay-100 duration-200 rounded-l-full bg-white p-4" src="./assets/img/next.svg" alt="Avançar" />
     </main>
-    <footer class="pt-4 overflow-hidden bottom-0 flex w-full justify-around items-start h-32 bg-[#e2e4e60f]">
+    <footer class="pt-12 overflow-hidden bottom-0 flex w-full justify-around items-start h-40 bg-[#e2e4e60f]">
       <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
         Technical Data
         <span><img class="w-[35px]" src="./assets/img/car.svg" alt="" /></span>
