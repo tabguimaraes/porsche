@@ -6,10 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Porsche</title>
   </head>
-  <body
-    class="box-border h-screen w-full bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-cover md:bg-contain md:bg-[center_top_20rem] bg-no-repeat md:h-[1024px]"
-  >
-    <header class="flex justify-between items-center border-b pl-8 pr-8 pt-8 md:pt-16 md:pb-16">
+  <body class="static box-border h-screen bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-cover bg-no-repeat">
+    <header class="flex justify-between items-center border-b p-8">
       <!-- <img src="./assets/img/hamburguer.svg" alt="" /> -->
       <button
         data-collapse-toggle="navbar-hamburger"
@@ -26,17 +24,17 @@
       <img class="w-[300px] h-[30px]" src="./assets/img/logo.svg" alt="" />
       <div class="flex gap-4 h-10">
         <img class="hover:scale-125 delay-100 duration-200 bg-[#E7E8EA] p-3 rounded-full" src="./assets/img/user.svg" alt="" />
-        <button class="md:hidden hover:scale-110 delay-100 duration-200 rounded-full flex items-center bg-black text-white p-3 gap-4">
+        <button class="hover:scale-110 delay-100 duration-200 rounded-full flex items-center bg-black text-white p-3 gap-4">
           <span><img src="./assets/img/arrow.svg" alt="" /></span>Find Porsche Center
         </button>
       </div>
     </header>
-    <section class="flex md:flex-wrap md:w-full justify-between pl-8 pr-8 pt-8 md:pt-16 md:pb-16 md:gap-16">
-      <p class="md:order-2 md:flex-none hover:scale-125 delay-100 duration-200 flex items-center gap-4 md:text-sm">
+    <section class="flex justify-between pl-8 pr-8 pt-8">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
         <span><img src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
       </p>
-      <h1 class="md:order-1 md:w-full md:text-center text-6xl">911 Carrera S</h1>
-      <p class="md:order-3 md:flex-none hover:scale-125 delay-100 duration-200 flex items-center gap-4 md:text-sm">
+      <h1 class="text-6xl">911 Carrera S</h1>
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
         Save configuration<span><img class="h-[40px] w-[40px]" src="./assets/img/save.svg" alt="" /></span>
       </p>
     </section>
@@ -44,12 +42,12 @@
       <img class="hover:scale-150 delay-100 duration-200 rounded-r-full bg-white p-4" src="./assets/img/prev.svg" alt="Voltar" />
       <img class="hover:scale-150 delay-100 duration-200 rounded-l-full bg-white p-4" src="./assets/img/next.svg" alt="Avançar" />
     </main>
-    <footer class="md:absolute md:flex-wrap md:gap-28 md:pt-4 md:pl-4 md:pr-4 bottom-0 flex w-full justify-around items-start h-24 bg-[#e2e4e60f]">
-      <p class="md:order-2 hover:scale-125 delay-100 duration-200 flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
+    <footer class="bottom-0 flex w-full justify-around items-start h-24 bg-[#e2e4e60f]">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
         Technical Data
         <span><img class="w-[35px]" src="./assets/img/car.svg" alt="" /></span>
       </p>
-      <div class="md:hidden md:order-1 footer-items flex md:flex-wrap justify-between items-center gap-9">
+      <div class="footer-items flex justify-between items-center gap-9">
         <div class="flex flex-col footer-item hover:scale-125 delay-100 duration-200 place-items-center">
           <img class="bg-white p-4 rounded-full" src="./assets/img/color.svg" alt="" />
           <p>Colors</p>
@@ -83,7 +81,7 @@
           <p>Accessories</p>
         </div>
       </div>
-      <div class="md:order-3 footer-item hover:scale-110 delay-100 price h-full bg-black pt-8 pl-12 pr-12 rounded-t-3xl">
+      <div class="footer-item hover:scale-110 delay-100 price h-full bg-black pt-8 pl-12 pr-12 rounded-t-3xl">
         <p class="text-[#898C9494] text-sm">Total Price</p>
         <p class="text-white">£125,356.00</p>
       </div>
