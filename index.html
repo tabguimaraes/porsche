@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Porsche</title>
   </head>
-  <body class="static box-border h-screen bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-cover bg-no-repeat">
-    <header class="flex justify-between items-center border-b p-8">
+  <body
+    class="box-border xl:h-screen w-full bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-cover md:bg-contain md:bg-[center_top_10rem] bg-no-repeat"
+  >
+    <header class="flex justify-between items-center border-b p-8 md:p-4">
       <!-- <img src="./assets/img/hamburguer.svg" alt="" /> -->
       <button
         data-collapse-toggle="navbar-hamburger"
@@ -24,17 +26,17 @@
       <img class="w-[300px] h-[30px]" src="./assets/img/logo.svg" alt="" />
       <div class="flex gap-4 h-10">
         <img class="hover:scale-125 delay-100 duration-200 bg-[#E7E8EA] p-3 rounded-full" src="./assets/img/user.svg" alt="" />
-        <button class="hover:scale-110 delay-100 duration-200 rounded-full flex items-center bg-black text-white p-3 gap-4">
+        <button class="md:hidden hover:scale-110 delay-100 duration-200 rounded-full flex items-center bg-black text-white p-3 gap-4">
           <span><img src="./assets/img/arrow.svg" alt="" /></span>Find Porsche Center
         </button>
       </div>
     </header>
-    <section class="flex justify-between pl-8 pr-8 pt-8">
-      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
+    <section class="flex justify-between pl-8 pr-8 md:pl-4 md:pr-4 pt-8 md:pt-16">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4 md:text-sm">
         <span><img src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
       </p>
       <h1 class="text-6xl">911 Carrera S</h1>
-      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
+      <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4 md:text-sm">
         Save configuration<span><img class="h-[40px] w-[40px]" src="./assets/img/save.svg" alt="" /></span>
       </p>
     </section>
@@ -42,7 +44,7 @@
       <img class="hover:scale-150 delay-100 duration-200 rounded-r-full bg-white p-4" src="./assets/img/prev.svg" alt="" />
       <img class="hover:scale-150 delay-100 duration-200 rounded-l-full bg-white p-4" src="./assets/img/next.svg" alt="" />
     </main>
-    <footer class="bottom-0 flex w-full justify-around items-start h-24 bg-[#e2e4e60f]">
+    <footer class="md:hidden bottom-0 flex w-full justify-around items-start h-24 bg-[#e2e4e60f]">
       <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-5 bg-white pl-6 pr-6 pt-2 pb-2 rounded-2xl">
         Technical Data
         <span><img class="w-[35px]" src="./assets/img/car.svg" alt="" /></span>
