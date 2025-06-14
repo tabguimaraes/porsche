@@ -1,6 +1,18 @@
 # Página de Venda Porsche – Projeto Responsivo com HTML e TailwindCSS
 
-Este projeto é uma simulação de uma página de venda do modelo **911 Carrera S** da Porsche, desenvolvida com foco em responsividade e estética refinada. O layout é totalmente responsivo, adaptando-se para **mobile**, **tablet** e **desktop**, e utiliza exclusivamente **HTML** e **TailwindCSS**.
+Este projeto é uma simulação de uma página de venda do modelo **911 Carrera S** da Porsche, desenvolvida com foco em responsividade e estética refinada. O layout é totalmente responsivo, adaptando-se para **desktop**, **tablet** e **mobile**, e utiliza exclusivamente **HTML** e **TailwindCSS**.
+
+### Desktop
+
+![Desktop](image.png)
+
+### Tablet
+
+![Tablet](image-1.png)
+
+### Mobile
+
+![Mobile](image-2.png)
 
 ## ✨ Objetivo
 
