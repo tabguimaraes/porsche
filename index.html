@@ -6,8 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Porsche</title>
   </head>
-  <body class="flex flex-col min-h-screen box-border bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-contain bg-center bg-no-repeat">
-    <header class="flex justify-between items-center border-b p-4 md:p-8">
+  <body class="flex flex-col h-screen box-border bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-contain bg-center bg-no-repeat">
+    <header class="flex justify-between items-center border-b p-4">
       <button
         data-collapse-toggle="navbar-hamburger"
         type="button"
@@ -23,19 +23,69 @@
       <img class="w-[146px] h-[30px]" src="./assets/img/logo.svg" alt="" />
       <div class="flex gap-4 h-10">
         <img class="hover:scale-125 delay-100 duration-200 bg-[#E7E8EA] p-3 rounded-full" src="./assets/img/user.svg" alt="" />
-        <button class="hidden hover:scale-110 delay-100 duration-200 rounded-full md:flex items-center bg-black text-white p-3 gap-4">
+        <button class="hidden hover:scale-110 delay-100 duration-200 rounded-full items-center bg-black text-white p-3 gap-4">
           <span><img src="./assets/img/arrow.svg" alt="" /></span>Find Porsche Center
         </button>
       </div>
     </header>
-    <section class="mt-20 flex justify-between pl-4 pr-4 pt-4 md:flex-wrap md:w-full md:pt-16 md:pb-16 md:gap-16">
-      <p class="hidden md:order-2 hover:scale-125 delay-100 duration-200 md:flex items-center gap-4">
-        <span><img src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
-      </p>
-      <h1 class="justify-self-center md:order-1 w-full text-center text-[3.5rem]">911 Carrera S</h1>
-      <p class="hidden md:order-3 hover:scale-125 delay-100 duration-200 md:flex items-center gap-4">
-        Save configuration<span><img class="h-[40px] w-[40px]" src="./assets/img/save.svg" alt="" /></span>
-      </p>
+    <section class="flex flex-wrap relative top-[100px]">
+      <h1 class="justify-self-center w-full text-center text-[3.5rem]">911 Carrera S</h1>
+      <div class="flex justify-between w-screen text-sm pl-4 pr-4 relative top-[160px]">
+        <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
+          <span><img src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
+        </p>
+        <p class="hover:scale-125 delay-100 duration-200 flex items-center gap-4">
+          Save configuration<span><img class="h-[30px] w-[30px]" src="./assets/img/save.svg" alt="" /></span>
+        </p>
+      </div>
     </section>
+    <main class="flex justify-between items-center flex-grow overflow-hidden">
+      <img class="hover:scale-150 delay-100 duration-200 rounded-r-full bg-white p-2 -mt-28" src="./assets/img/prev.svg" alt="Voltar" />
+      <img class="hover:scale-150 delay-100 duration-200 rounded-l-full bg-white p-2 -mt-28" src="./assets/img/next.svg" alt="Avançar" />
+    </main>
+    <footer class="bottom-0 flex w-full justify-around items-start bg-[#e2e4e60f]">
+      <p class="text-sm hover:scale-110 delay-100 duration-200 flex items-center gap-2 bg-white px-2 py-2 rounded-2xl">
+        Technical Data
+        <span><img class="w-[35px]" src="./assets/img/car.svg" alt="" /></span>
+      </p>
+      <div class="hidden footer-items xl:flex justify-between items-center gap-6 lg:gap-9">
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/color.svg" alt="" />
+          <p>Colors</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/wheels.svg" alt="" />
+          <p>Wheels</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/materials.svg" alt="" />
+          <p>Materials</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/seat.svg" alt="" />
+          <p>Seats</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/options.svg" alt="" />
+          <p>Options</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/technology.svg" alt="" />
+          <p>Technology</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/packages.svg" alt="" />
+          <p>Packages</p>
+        </div>
+        <div class="flex flex-col items-center hover:scale-125 delay-100 duration-200">
+          <img class="bg-white p-4 rounded-full" src="./assets/img/accessories.svg" alt="" />
+          <p>Accessories</p>
+        </div>
+      </div>
+      <div class="pb-5 footer-item hover:scale-110 delay-100 price h-full bg-black pt-4 pl-8 pr-8 rounded-t-3xl text-center lg:text-left">
+        <p class="text-[#898C9494] text-sm">Total Price</p>
+        <p class="text-white">£125,356.00</p>
+      </div>
+    </footer>
   </body>
 </html>
