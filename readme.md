@@ -4,15 +4,15 @@ Este projeto é uma simulação de uma página de venda do modelo **911 Carrera 
 
 ### Desktop
 
-![Desktop](image.png)
+![Desktop](desktop.png)
 
 ### Tablet
 
-![Tablet](image-1.png)
+![Tablet](tablet.png)
 
 ### Mobile
 
-![Mobile](image-2.png)
+![Mobile](mobile.png)
 
 ## ✨ Objetivo
 

@@ -2,15 +2,13 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css" />
     <title>Porsche</title>
   </head>
-  <body
-    class="drop-shadow-md flex flex-col min-h-screen box-border bg-[#f8f8f808] bg-[url('./assets/img/iris.svg')] bg-contain bg-center bg-no-repeat overflow-hidden"
-  >
-    <header class="flex justify-between items-center border-b p-4 md:p-8">
+  <body class="flex flex-col h-screen bg-[#f8f8f8] bg-[url('./assets/img/iris.svg')] bg-contain bg-center bg-no-repeat overflow-hidden">
+    <header class="relative flex py-5 justify-between items-center pr-4 md:pl-5 md:pr-8 border-b-stone-500 border-b-[1px]">
       <button
         data-collapse-toggle="navbar-hamburger"
         type="button"
@@ -23,83 +21,87 @@
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
         </svg>
       </button>
-      <img class="w-[200px] h-[50px] md:w-[300px] xl:ml-[265px]" src="./assets/img/logo.svg" alt="" />
-      <div class="flex gap-4 h-10 md:h-12">
-        <img class="hover:scale-110 delay-100 duration-200 bg-[#E7E8EA] p-3 rounded-full" src="./assets/img/user.svg" alt="" />
-        <button class="hidden xl:flex xl:text-xl hover:scale-110 delay-100 duration-200 rounded-full items-center bg-black text-white p-4 gap-5">
-          <span><img class="h-[20px]" src="./assets/img/arrow.svg" alt="" /></span>Find Porsche Center
+      <img class="w-52 md:w-72 xl:w-80 xl:h-10 absolute left-1/2 -translate-x-1/2" src="./assets/img/logo.svg" alt="" />
+      <div class="xl:flex items-center gap-8">
+        <img
+          class="bg-[#E7E8EA] p-3 rounded-full w-10 md:w-14 hover:scale-110 md:hover:scale-125 delay-100 duration-200"
+          src="./assets/img/user.svg"
+          alt=""
+        />
+        <button
+          class="hidden xl:flex items-center p-4 gap-5 hover:scale-110 delay-100 duration-200 rounded-full bg-black text-white xl:text-lg 2xl:text-2xl"
+        >
+          <span><img class="w-6" src="./assets/img/arrow.svg" alt="" /></span>Find Porsche Center
         </button>
       </div>
     </header>
-    <section class="flex flex-wrap relative">
-      <h1 class="absolute top-[100px] md:top-[50px] lg:top-[50px] justify-self-center w-full text-center text-5xl">911 Carrera S</h1>
-      <div class="absolute top-[330px] md:top-[150px] lg:top-[100px] flex justify-between w-full text-sm pl-4 pr-4 md:pl-8 md:pr-8 md:text-2xl">
-        <p class="hover:scale-110 delay-100 duration-200 flex items-center gap-4">
-          <span><img class="h-[20px] w-[20px] md:h-[40px] md:w-[40px]" src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
+    <section class="flex flex-col">
+      <h1 class="text-5xl md:text-7xl relative text-center top-[150%] md:top-[100%] xl:top-[50%]">911 Carrera S</h1>
+      <div class="flex items-center justify-between relative top-[450%] md:top-[150%] xl:top-[70%] tracking-wide md:text-3xl">
+        <p class="flex items-center justify-between gap-4 pl-4 md:pl-8 hover:scale-110 delay-100 duration-200">
+          <span><img class="md:w-8" src="./assets/img/arrow_left.svg" alt="" /></span>Model overview
         </p>
-        <p class="hover:scale-110 delay-100 duration-200 flex items-center gap-4">
-          Save configuration<span><img class="h-[20px] w-[20px] md:h-[40px] md:w-[40px]" src="./assets/img/save.svg" alt="" /></span>
+        <p class="flex items-center justify-between gap-4 pr-4 md:pr-8 hover:scale-110 delay-100 duration-200">
+          Save configuration<span><img class="w-5 md:w-8" src="./assets/img/save.svg" alt="" /></span>
         </p>
       </div>
     </section>
-    <main class="drop-shadow-md flex justify-between items-center flex-grow overflow-hidden">
+    <section class="flex items-center justify-between relative top-[27%] md:top-[30%]">
       <img
-        class="absolute top-[250px] md:top-[450px] lg:top-[400px] md:w-[40px] xl:w-[45px] hover:scale-150 delay-100 duration-200 rounded-r-full bg-white p-2"
+        class="drop-shadow-md px-3 py-4 md:px-5 rounded-r-3xl w-9 md:w-14 bg-white hover:scale-150 delay-100 duration-200"
         src="./assets/img/prev.svg"
         alt="Voltar"
       />
       <img
-        class="absolute top-[250px] md:top-[450px] lg:top-[400px] md:w-[40px] xl:w-[45px] hover:scale-150 delay-100 duration-200 rounded-l-full bg-white p-2 right-[0px]"
+        class="drop-shadow-md px-3 py-4 md:px-5 rounded-l-3xl w-9 md:w-14 bg-white hover:scale-150 delay-100 duration-200"
         src="./assets/img/next.svg"
         alt="Avançar"
       />
-    </main>
-    <footer class="drop-shadow-md bottom-0 flex w-full justify-around 2xl:h-[150px] md:justify-between items-start bg-[#e2e4e60f] md:pl-8 md:pr-8">
+    </section>
+    <footer class="mt-auto items-center flex justify-between px-4 md:px-8 pt-4 shadow-2xl drop-shadow-md bg-[#e2e4e60f]">
       <p
-        class="text-sm md:text-2xl hover:scale-110 delay-100 duration-200 flex items-center gap-2 md:gap-4 bg-white px-2 py-2 md:px-6 md:py-2 rounded-2xl"
+        class="flex h-fit gap-4 items-center bg-white rounded-full px-4 py-2 md:text-3xl xl:text-xl 2xl:text-3xl font-[anaheim] hover:scale-110 delay-100 duration-200"
       >
         Technical Data
-        <span><img class="w-[35px] md:w-[55px]" src="./assets/img/car.svg" alt="" /></span>
+        <span><img class="w-10 2xl:w-16" src="./assets/img/car.svg" alt="" /></span>
       </p>
-      <div class="hidden footer-items 2xl:flex justify-between items-center gap-6 xl:text-xl">
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/color.svg" alt="" />
+      <div class="hidden xl:flex xl:gap-6 2xl:gap-8">
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/color.svg" alt="" />
           <p>Colors</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/wheels.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/wheels.svg" alt="" />
           <p>Wheels</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/materials.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/materials.svg" alt="" />
           <p>Materials</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/seat.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/seat.svg" alt="" />
           <p>Seats</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/options.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/options.svg" alt="" />
           <p>Options</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/technology.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/technology.svg" alt="" />
           <p>Technology</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/packages.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/packages.svg" alt="" />
           <p>Packages</p>
         </div>
-        <div class="gap-3 flex flex-col items-center hover:scale-125 delay-100 duration-200">
-          <img class="w-[60px] bg-white p-4 rounded-full" src="./assets/img/accessories.svg" alt="" />
+        <div class="flex flex-col justify-center items-center gap-4 hover:scale-125 delay-100 duration-200">
+          <img class="w-10" src="./assets/img/accessories.svg" alt="" />
           <p>Accessories</p>
         </div>
       </div>
-      <div
-        class="footer-item hover:scale-110 delay-100 price h-full bg-black pb-3 pt-4 pl-6 pr-6 md:pb-5 md:pt-5 md:pl-10 md:pr-10 rounded-t-3xl text-center lg:text-left overflow-hidden"
-      >
+      <div class="py-4 md:pb-10 md:pt-8 px-8 md:px-10 bg-black tracking-wide text-white rounded-t-4xl hover:scale-110 delay-100 duration-200">
         <p class="text-[#898C9494] text-sm md:text-xl">Total Price</p>
-        <p class="text-white md:text-2xl">£125,356.00</p>
+        <p class="text-white md:text-3xl">£125,356.00</p>
       </div>
     </footer>
   </body>
